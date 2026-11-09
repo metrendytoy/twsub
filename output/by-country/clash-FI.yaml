@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 8.6.112.0
+  port: 8443
+  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: 45.144.234.157
